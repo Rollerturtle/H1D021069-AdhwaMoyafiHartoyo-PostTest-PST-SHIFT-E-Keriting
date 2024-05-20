@@ -1,0 +1,38 @@
+1. Servo bekerja dengan menerima sinyal PWM yang menentukan sudut posisinya, seperti 0°, 90°, atau 180°. Motor ini memiliki potensiometer yang memberikan umpan balik posisi, sehingga motor bisa menyesuaikan untuk mencapai posisi yang diinginkan.
+
+2. Sensor ultrasonik mengukur jarak dengan mengirim gelombang suara dan mendeteksi pantulannya. Sensor ini mengirimkan gelombang suara, yang memantul ketika mengenai objek, dan kembali ke sensor. Waktu yang diperlukan untuk gelombang suara pulang-pergi digunakan untuk menghitung jarak ke objek tersebut.
+
+3. Smart Door Lock, Robot Vacuum, Wearable Fitness Tracker, Smart Thermostat, Smart Refrigerator, Automated Plant Watering System, Automated Pet Feeder System
+
+4. Jelaskan Projek
+
+Informasi Umum Projek Saya
+
+Proyek saya merupakan implementasi smart door lock menggunakan sensor sidik jari, relay module, solenoid door lock, dan LCD RGB. Sistem ini dikendalikan oleh mikrokontroler Arduino UNO yang berfungsi untuk mengolah input dari sensor sidik jari, mengaktifkan relay untuk membuka kunci, dan menampilkan pesan status pada LCD.
+
+
+Alat yang digunakan
+
+Arduino UNO: Mikrokontroler yang mengendalikan keseluruhan sistem.
+Optical Fingerprint Sensor (DFRobot): Sensor sidik jari untuk mendeteksi dan memverifikasi sidik jari pengguna.
+Relay Module: Komponen yang digunakan untuk mengendalikan solenoid door lock.
+Solenoid Door Lock: Kunci pintu yang dikendalikan secara elektronik.
+LCD 16x2 RGB (DFRobot): Layar untuk menampilkan pesan status kepada pengguna.
+12V DC Power Source: Sumber daya untuk solenoid door lock.
+
+Cara Kerja Sistem
+
+Koneksi Sensor Sidik Jari:
+
+ - Sensor sidik jari dihubungkan ke Arduino UNO melalui pin 2 (Tx), pin 3 (Rx), 5V (VCC), dan GND.
+ - Sensor ini membaca sidik jari pengguna dan mengirimkan data ke Arduino untuk diverifikasi.
+
+Koneksi Relay dan Solenoid Door Lock:
+
+ - Relay module dihubungkan ke pin 8 (IN1) pada Arduino untuk kontrol, dan ke 5V serta GND untuk daya.
+ - Solenoid door lock dihubungkan ke relay dan sumber daya 12V DC. Relay bertindak sebagai saklar yang mengendalikan  daya ke solenoid door lock.
+
+Koneksi LCD RGB:
+
+ - LCD dihubungkan ke Arduino melalui koneksi I2C, dengan pin VCC ke 3.3V, GND ke GND, SCL ke A5, dan SDA ke A4.
+ - LCD ini digunakan untuk menampilkan status, seperti meminta pengguna menempatkan jari, validasi sidik jari berhasil, atau gagal.
